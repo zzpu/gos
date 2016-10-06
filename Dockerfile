@@ -1,7 +1,6 @@
 FROM daocloud.io/ubuntu:14.04
 
 MAINTAINER Fezzpu 
-RUN  DEBIAN_FRONTEND=noninteractive apt-get install -y git
 #RUN git clone https://github.com/zzpu/gos.git && rm -f /etc/apt/sources.list && cp gos/sources.list /etc/apt/
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y golang
 RUN mkdir -p /opt/workspace && export GOPATH=/opt/workspace
